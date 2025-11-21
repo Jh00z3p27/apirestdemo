@@ -1,33 +1,69 @@
+# ========================================
+# 🚫 Archivos y carpetas que Git debe ignorar
+# Proyecto: API Rest con Spring Boot
+# IDE: IntelliJ IDEA / STS / VS Code
+# Build tool: Maven
+# ========================================
+
+# 📄 Documentos auxiliares
 HELP.md
+
+# 🏗️ Carpeta de compilación de Maven
 target/
+
+# ⚙️ Wrapper de Maven (archivo binario)
 .mvn/wrapper/maven-wrapper.jar
+
+# ❗ Evita ignorar carpetas target dentro de src (por si se usan en pruebas)
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# =========================
+# 🌱 Spring Tool Suite (STS)
+# =========================
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
-.sts4-cache
+.sts4-cache/
 
-### IntelliJ IDEA ###
-.idea
+# =========================
+# 🧠 IntelliJ IDEA
+# =========================
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# =========================
+# 🧰 NetBeans
+# =========================
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+
+# 🏗️ Carpeta de compilación de NetBeans
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# =========================
+# 🧪 VS Code
+# =========================
 .vscode/
+
+# =========================
+# 🗃️ Sistema operativo
+# =========================
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# =========================
+# 🔐 Archivos sensibles o de entorno
+# =========================
+.env
+application-local.properties
